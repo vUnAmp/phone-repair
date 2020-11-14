@@ -1,0 +1,42 @@
+.contact-title {
+  text-align: center;
+  padding-bottom: 12px;
+  color: #17a2b8;
+}
+.wrap-form {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px 8px;
+  background: #ddd;
+  border-radius: 3px;
+  @media (min-width: 376px) {
+    padding: 20px 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      height: 36px;
+      outline-color: orange;
+    }
+    textarea {
+      outline-color: orange;
+    }
+    label {
+      padding-top: 6px;
+    }
+
+    button {
+      //   height: 36px;
+      color: white;
+      background: #007bff;
+      padding: 8px 0;
+      font-size: 20px;
+      font-weight: 600;
+      border: 1px solid #17a2b8;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+  }
+}
