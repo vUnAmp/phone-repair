@@ -170,6 +170,7 @@
   }
   h3 {
     line-height: 80px;
+    font-size: 24px;
   }
 }
 // .whyus_right {
@@ -268,6 +269,56 @@
     padding: 0;
   }
 }
+// Funktion
+.funktioniert {
+  input {
+    display: none;
+  }
+  label {
+    border: 1px solid #ccc;
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: calc(1vw + 8px);
+  }
+  // background-color: red;
+
+  .typeofservice_selector {
+    position: relative;
+    display: flex;
+    padding-bottom: 67%;
+    justify-content: space-between;
+  }
+
+  .option1 {
+    background: violet;
+  }
+  .option2 {
+    background: deeppink;
+  }
+}
+.service_img {
+  margin-top: 80px;
+  position: absolute;
+  width: 100%;
+  padding-top: 67%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#funktion1:checked ~ .funktion1 {
+  background-color: #18305d;
+  color: #ffaa19;
+}
+#funktion1:checked ~ .service_img {
+  background-image: url(../images/give.jpg);
+}
+#funktion:checked ~ .service_img {
+  background-image: url(../images/post.jpg);
+}
+#funktion:checked ~ .funktion {
+  background-color: #18305d;
+  color: #ffaa19;
+}
 // #17a2b8
 .reachus-method {
   display: flex;
@@ -292,6 +343,7 @@
   cursor: pointer;
 }
 .reachus {
+  margin-top: 20px;
   text-align: center;
   background: #17a2b8;
   // padding: 20px 10px;

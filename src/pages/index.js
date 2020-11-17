@@ -159,7 +159,7 @@ const IndexPage = () => {
             <Card>
               <div className="whyus_title whyus_right">
                 <FontAwesomeIcon icon={faHandshake} size="4x" color="#ffaa19" />{' '}
-                <h3>KEIN DATENVERLUST</h3>
+                <h3>Kein Datenvelust</h3>
               </div>
 
               <Card.Body>
@@ -196,11 +196,30 @@ const IndexPage = () => {
         </div>
         <div className="typeofservice">
           <div className="typeofservice_selector">
-            <div className="vorort">VOR ORT ABGEBEN</div>
-            <div className="versand">VERSANDREPARATUR</div>
-          </div>
-          <div className="service_img">
-            <img src="" alt="" />
+            <input
+              type="radio"
+              // checked="checked"
+              defaultChecked
+              name="radio"
+              id="funktion1"
+              value="funktion1"
+            />
+            <label className="funktion1" htmlFor="funktion1">
+              VOR ORT ABGEBEN
+            </label>
+            <input
+              type="radio"
+              // checked="checked"
+
+              name="radio"
+              id="funktion"
+              value="funktion"
+            />
+
+            <label className="funktion" htmlFor="funktion">
+              VERSANDREPARATUR
+            </label>
+            <div className="service_img"></div>
           </div>
         </div>
       </div>
