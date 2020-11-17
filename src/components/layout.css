@@ -652,3 +652,6 @@ footer {
   right: 0;
   background: pink;
 }
+.container {
+  max-width: unset !important;
+}
