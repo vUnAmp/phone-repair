@@ -599,7 +599,8 @@ pre tt:after {
 }
 @media (max-width: 768px) {
   main {
-    margin-top: 100px;
+    border-top: 2px solid #ccc;
+    margin-top: 55px;
   }
 }
 main {
@@ -608,7 +609,7 @@ main {
 .wrap-main {
   margin: 0 auto;
   max-width: 1024px;
-  /* padding: 0 1.0875rem 1.45rem; */
+  padding: 0 1.0875rem 1.45rem;
   min-height: calc(100vh - 90px);
   position: relative;
 }

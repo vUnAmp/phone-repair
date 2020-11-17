@@ -11,7 +11,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import './header.scss';
-import Weare from './Weare';
 const Header = ({ siteTitle }) => (
   <header>
     <div className="wrap-info">
@@ -31,6 +30,7 @@ const Header = ({ siteTitle }) => (
         </a>
       </div>
       <div className="wrap-info__item info-time">
+        <FontAwesomeIcon icon={faBusinessTime} size="2x" />
         <span>
           <strong>MI-SO</strong> 10:00 - 19:00 <br />
           <strong>DI</strong> Geschlossen

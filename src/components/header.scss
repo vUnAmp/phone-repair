@@ -104,16 +104,20 @@ header {
     margin-top: 4px;
     color: #ffaa19;
     svg {
-      height: 28px;
+      height: 20px;
     }
   }
   .wrap-info__mobile {
     display: flex;
     align-items: center;
-    color: white;
-    width: calc(100vw - 260px);
-    justify-content: space-between;
-    margin-right: 60px;
+    margin-right: calc(50px + 3vw);
+    flex: 1;
+    justify-content: space-evenly;
+    margin-top: 8px;
+    // color: white;
+    // width: calc(100vw - 260px);
+    // justify-content: space-between;
+    // margin-right: 60px;
   }
 
   .wrap-info {
@@ -257,7 +261,7 @@ header {
 .mobile__time-content,
 .mobile-content {
   position: fixed;
-  padding: 20px;
+  padding: 20px 0;
   width: 100vw;
   margin: 0 auto;
   background-color: red;
@@ -305,11 +309,12 @@ header {
 
 .overlay {
   position: fixed;
+  z-index: 2020;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   display: none;
   animation: fadeIn 0.35s ease-in-out;
 }

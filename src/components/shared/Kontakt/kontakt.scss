@@ -1,0 +1,16 @@
+.kontakt__items {
+  display: flex;
+  align-items: center;
+  padding: 1em 0;
+  background-color: #18305d;
+
+  .kontakt__icon {
+    color: #ffaa19;
+    margin: 2px 1em 0 0.5em;
+  }
+  .kontakt__content {
+    flex: 1;
+
+    color: #cecece;
+  }
+}

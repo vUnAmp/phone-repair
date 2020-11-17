@@ -50,8 +50,51 @@
   .background1 {
     filter: opacity(0.9);
   }
+  .overlay-pic {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    // z-index: 10;
+  }
+  .btn-termin {
+    // z-index: 20;
+    // position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 5%;
+    // right: 0;
+    // background-color: bisque;
+    display: flex;
+    // justify-content: center;
+    &:hover {
+      opacity: 0.9;
+      text-decoration: none;
+    }
+
+    button {
+      width: 95%;
+      max-width: 250px;
+      background-color: #ffaa19;
+      text-transform: uppercase;
+      outline: none;
+      border: none;
+      &:active {
+        background-color: #ffab19ce !important;
+        border: none !important;
+        box-shadow: none;
+      }
+    }
+  }
 }
+
 .carousel-caption {
+  // z-index: 20;
   top: calc((90% - 170px) / 2);
   left: 5%;
   right: unset;
@@ -81,12 +124,14 @@
     max-width: 460px;
     color: white;
   }
+  span::first-letter {
+    padding-right: 10px;
+  }
 }
 .whyus {
   margin: 20px auto;
   text-align: center;
-
-  background: #17a2b8;
+  background-color: #18305d;
   color: white;
   padding: 10px 0;
 }
@@ -97,7 +142,7 @@
 .whyus_card3 {
   margin-left: -15px;
   .whyus_title {
-    border-right: 4px solid red;
+    // border-right: 4px solid red;
   }
 }
 .whyus_card2,
@@ -105,26 +150,31 @@
   margin-left: 30px;
   margin-right: -15px;
   .whyus_title {
-    border-left: 4px solid red;
+    // border-left: 4px solid red;
   }
 }
 .whyus_title {
   display: flex;
   flex-direction: row;
   font-size: 16px;
-  color: #17a2b8;
+  color: rgb(44, 41, 41);
   padding-top: 10px;
   padding-left: 8px;
   box-shadow: 0px 4px 6px 2px #ddd;
+  // background-color: #18305d;
   svg {
     padding-right: 8px;
     align-self: center;
     margin-bottom: 6px;
+    min-width: 80px;
   }
   h3 {
-    line-height: 1;
+    line-height: 80px;
   }
 }
+// .whyus_right {
+//   flex-direction: row-reverse;
+// }
 .card {
   .card-body {
     padding: 18px;
@@ -158,44 +208,44 @@
 }
 
 .marquee span:nth-child(1) {
-  background-image: url("../images/brandslide/apple.png");
+  background-image: url('../images/brandslide/apple.png');
   animation-delay: 0s;
 }
 .marquee span:nth-child(2) {
-  background-image: url("../images/brandslide/samsung.png");
+  background-image: url('../images/brandslide/samsung.png');
   animation-delay: 0.05s;
 }
 
 .marquee span:nth-child(3) {
-  background-image: url("../images/brandslide/htc.png");
+  background-image: url('../images/brandslide/htc.png');
   animation-delay: 0.1s;
 }
 
 .marquee span:nth-child(4) {
-  background-image: url("../images/brandslide/lg.png");
+  background-image: url('../images/brandslide/lg.png');
   animation-delay: 0.15s;
 }
 
 .marquee span:nth-child(5) {
-  background-image: url("../images/brandslide/nexus.png");
+  background-image: url('../images/brandslide/nexus.png');
   animation-delay: 0.8s;
   margin-right: 20px;
 }
 
 .marquee span:nth-child(6) {
-  background-image: url("../images/brandslide/nokia.png");
+  background-image: url('../images/brandslide/nokia.png');
   animation-delay: 1s;
   margin-right: 20px;
 }
 
 .marquee span:nth-child(7) {
-  background-image: url("../images/brandslide/xiaomi.png");
+  background-image: url('../images/brandslide/xiaomi.png');
   animation-delay: 1.2s;
   margin-right: 20px;
 }
 
 .marquee span:nth-child(8) {
-  background-image: url("../images/brandslide/huawei.png");
+  background-image: url('../images/brandslide/huawei.png');
   animation-delay: 1.4s;
   margin-right: 20px;
 }
