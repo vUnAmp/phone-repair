@@ -47,7 +47,7 @@ const IndexPage = () => {
   // console.log(data);
   return (
     <Layout>
-      <SEO title="SuachuaOnline24" />
+      <SEO title="Repairphone24.de" />
       <Carousel>
         <Carousel.Item className="wrap-bg1">
           <Image
