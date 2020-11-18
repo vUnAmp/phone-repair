@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Chuyên sửa chữa điện thoại Deutschland`,
+    title: `Handy Reparatur in DongXuan Center - Berlin`,
     description: `Repair your phone and tablet with our love !`,
     author: `@gatsbyjs`,
   },

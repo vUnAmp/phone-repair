@@ -610,7 +610,7 @@ main {
   margin: 0 auto;
   max-width: 1024px;
   padding: 0 1.0875rem 1.45rem;
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 150px);
   position: relative;
 }
 footer {

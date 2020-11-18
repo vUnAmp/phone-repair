@@ -44,7 +44,7 @@ const IndexPage = () => {
     }
   `);
 
-  console.log(data);
+  // console.log(data);
   return (
     <Layout>
       <SEO title="SuachuaOnline24" />

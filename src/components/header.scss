@@ -119,6 +119,13 @@ header {
     // justify-content: space-between;
     // margin-right: 60px;
   }
+  .menubar-header {
+    .wrap-logo {
+      position: absolute;
+      top: 18px;
+      margin-left: 20px;
+    }
+  }
 
   .wrap-info {
     // transform: translateY(100px);
@@ -217,14 +224,16 @@ header {
   justify-content: center;
   width: 300px;
 
-  background: white;
+  background: #18305d;
   transform: translateX(-100%);
   opacity: 0;
   transition: all 0.35s ease-in-out;
 
   a {
-    color: #1d2129;
+    color: #ffaa19;
     padding-left: 0;
+    width: 100%;
+    display: block;
   }
 
   .menubar-modal-wrap {

@@ -2,6 +2,7 @@ export const data = [
   [
     { value: 'iphone11', label: 'Iphone 11' },
     { value: 'iphone12', label: 'Iphone 12' },
+    { value: 'iphone12', label: 'Iphone 12' },
   ],
   [
     { value: 'galaxy20', label: 'Galaxy 20' },

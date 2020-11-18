@@ -91,19 +91,13 @@ const Header = ({ siteTitle }) => (
         <ul>
           <li>
             {' '}
-            <Link to="/howitwork"> Gửi thiết bị </Link>{' '}
+            <Link to="/"> Start </Link>{' '}
           </li>
           <li>
             <Link to="/termin">Termin</Link>{' '}
           </li>
           <li>
-            <Link to="/contact"> Liên hệ</Link>{' '}
-          </li>
-          <li>
-            <Link to="/aboutus"> Giới thiệu</Link>{' '}
-          </li>
-          <li>
-            <Link to="/jobs">Jobs</Link>{' '}
+            <Link to="/aboutus"> Über uns</Link>{' '}
           </li>
         </ul>
       </nav>
@@ -116,9 +110,14 @@ const Header = ({ siteTitle }) => (
         <label htmlFor="menubar-toggle" className="overlay"></label>
         <div className="menubar-modal-box">
           <div className="menubar-header">
-            <Link className="menubar-home" to="/">
-              Home
-            </Link>
+            <div className="wrap-logo">
+              <Link to="/">
+                <span className="blackflag">Repair</span>
+                <span className="redflag">Phone</span>
+                <span className="yellowflag">24</span>
+              </Link>
+              {/* <Weare /> */}
+            </div>
 
             <label htmlFor="menubar-toggle" className="menubar-close">
               {' '}
@@ -128,19 +127,13 @@ const Header = ({ siteTitle }) => (
           <ul className="menubar-modal-wrap">
             <li>
               {' '}
-              <Link to="/howitwork"> Gửi thiết bị </Link>{' '}
+              <Link to="/"> Start </Link>{' '}
             </li>
             <li>
               <Link to="/termin">Termin</Link>{' '}
             </li>
             <li>
-              <Link to="/jobs">Jobs</Link>{' '}
-            </li>
-            <li>
-              <Link to="/contact"> Liên hệ</Link>{' '}
-            </li>
-            <li>
-              <Link to="/aboutus"> Giới thiệu</Link>{' '}
+              <Link to="/aboutus"> Über uns</Link>{' '}
             </li>
           </ul>
         </div>
