@@ -8,6 +8,7 @@ import { data, branches, problems } from '../components/shared/data';
 import emailjs, { init } from 'emailjs-com';
 import { faGlassMartiniAlt } from '@fortawesome/free-solid-svg-icons';
 import { navigate } from 'gatsby';
+
 init('user_pjN71AkA6f8IUCEG6ohxc');
 const d = new Date();
 const month = d.getMonth();
@@ -28,19 +29,19 @@ const Termin = () => {
   const [problem, setProblems] = useState(null);
   const handleBranches = (e) => {
     const x = branches.findIndex((item) => item.label === e.label);
-    console.log(x);
+    console.log(e);
     // setModel(data[x]);
-    setBranch(e.value);
+    setBranch(e);
     setToggle(false);
     setModeles(data[x]);
-    console.log(data[x]);
+    // console.log(data[x]);
     setModel('2. Modell auswählen…');
   };
   const handleModel = (e) => {
-    setModel(e.value);
+    setModel(e);
   };
   const handleProblem = (e) => {
-    setProblems(e.value);
+    setProblems(e);
   };
   const sendEmail = () => {
     // `khach hang: ${name}, sdt: ${number}, May : ${branch},  ${model}, Bi hong : ${problem} , Thoi gian ${terminDate} `
