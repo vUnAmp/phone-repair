@@ -1,6 +1,7 @@
 import { Link, navigate } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
+import Redirect from '../components/redirect';
 
 const Thanks = ({ location }) => {
   console.log(location);
@@ -16,7 +17,7 @@ const Thanks = ({ location }) => {
             Check your <strong>{location.state.email}</strong> to review Termin
           </span>
         ) : (
-          <Link to="/" />
+          <Redirect />
         )}
       </div>
     </Layout>
