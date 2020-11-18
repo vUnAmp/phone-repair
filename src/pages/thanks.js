@@ -1,9 +1,12 @@
-import { navigate } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
 
-const thanks = ({ location }) => {
+const Thanks = ({ location }) => {
   console.log(location);
+  // const gobackHome = () => {
+  //   navigate('/');
+  // };
   // const { email } = props.email;
   return (
     <Layout>
@@ -13,11 +16,11 @@ const thanks = ({ location }) => {
             Check your <strong>{location.state.email}</strong> to review Termin
           </span>
         ) : (
-          navigate('/')
+          <Link to="/" />
         )}
       </div>
     </Layout>
   );
 };
 
-export default thanks;
+export default Thanks;
