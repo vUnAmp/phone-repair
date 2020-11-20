@@ -5,20 +5,23 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import { Carousel, Button, Container, Row, Col, Card } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faCcPaypal,
-  faDhl,
-  faPaypal,
-} from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {
+//   faCcPaypal,
+//   faDhl,
+//   faPaypal,
+// } from '@fortawesome/free-brands-svg-icons';
+import { AuthContext } from '../components/storeContext/AuthProvider';
+// import MessengerCustomerChat from 'react-messenger-customer-chat';
+import firebase from '../firebase/admin';
 
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+// import { AuthContext } from './storeContext/AuthProvider';
 
 import Header from './header';
 import './layout.css';
@@ -33,8 +36,10 @@ const Layout = ({ children }) => {
       }
     }
   `);
+  const authContext = useContext(AuthContext);
 
   return (
+    // <AuthContext.Provider>
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="wrap-main">
@@ -58,14 +63,15 @@ const Layout = ({ children }) => {
             </Row>
           </div>
         </footer>
-        <div>
+        {/* <div>
           <MessengerCustomerChat
             pageId="101334158232115"
             appId="540304473573966"
           />
-        </div>
+        </div> */}
       </div>
     </>
+    // </AuthContext.Provider>
   );
 };
 

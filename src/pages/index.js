@@ -25,7 +25,6 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import './index.scss';
-import serivce1 from '../images/service1.png';
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`

@@ -1,9 +1,12 @@
 import { navigate } from 'gatsby';
-import React, { useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import firebase from '../../../firebase/admin';
+import { AuthContext } from '../../storeContext/AuthProvider';
+
 import './authform.scss';
 
 const Login = () => {
+  const authContext = useContext(AuthContext);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -16,6 +19,8 @@ const Login = () => {
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then((user) => {
+        authContext.authenticated = true;
+        authContext.loadingAuthState = false;
         alert('Successfully Login');
         navigate('/');
       })

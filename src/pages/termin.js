@@ -6,7 +6,6 @@ import Layout from '../components/layout';
 import './termin.scss';
 import { data, branches, problems } from '../components/shared/data';
 import emailjs, { init } from 'emailjs-com';
-import { faGlassMartiniAlt } from '@fortawesome/free-solid-svg-icons';
 import { navigate } from 'gatsby';
 
 init('user_pjN71AkA6f8IUCEG6ohxc');
