@@ -15,6 +15,7 @@ import firebase from '../firebase/admin';
 
 import './header.scss';
 import './justdoit.scss';
+
 const Header = ({ siteTitle }) => {
   const authContext = useContext(AuthContext);
 
@@ -34,6 +35,11 @@ const Header = ({ siteTitle }) => {
       checkAuth();
     };
   }, []);
+  const closeMenuBar = () => {
+    document.getElementById('menubar-toggle').checked = false;
+
+    // console.log(document.getElementById('menubar'));
+  };
   console.log('render, render');
   return (
     <header>
@@ -162,7 +168,7 @@ const Header = ({ siteTitle }) => {
             <FontAwesomeIcon icon={faBars} size="2x" className="burger-menu" />
           </label>
           <label htmlFor="menubar-toggle" className="overlay"></label>
-          <div className="menubar-modal-box">
+          <div className="menubar-modal-box" id="menubar">
             <div className="menubar-header">
               <div className="wrap-logo">
                 <Link to="/">
@@ -199,24 +205,44 @@ const Header = ({ siteTitle }) => {
                 </div>
               ) : (
                 <ul>
-                  <li>
+                  <li
+                    onClick={() => {
+                      closeMenuBar();
+                    }}
+                  >
                     <Link to="/signin"> Anmelden</Link>{' '}
                   </li>
-                  <li>
+                  <li
+                    onClick={() => {
+                      closeMenuBar();
+                    }}
+                  >
                     <Link to="/signup"> Registrieren</Link>{' '}
                   </li>
                 </ul>
               )}
             </div>
             <ul className="menubar-modal-wrap">
-              <li>
+              <li
+                onClick={() => {
+                  closeMenuBar();
+                }}
+              >
                 {' '}
                 <Link to="/"> Start </Link>{' '}
               </li>
-              <li>
+              <li
+                onClick={() => {
+                  closeMenuBar();
+                }}
+              >
                 <Link to="/termin">Termin</Link>{' '}
               </li>
-              <li>
+              <li
+                onClick={() => {
+                  closeMenuBar();
+                }}
+              >
                 <Link to="/aboutus"> Über uns</Link>{' '}
               </li>
             </ul>
