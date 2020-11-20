@@ -14,6 +14,7 @@ import { AuthContext } from '../components/storeContext/AuthProvider';
 import firebase from '../firebase/admin';
 
 import './header.scss';
+import './justdoit.scss';
 const Header = ({ siteTitle }) => {
   const authContext = useContext(AuthContext);
 
@@ -122,13 +123,37 @@ const Header = ({ siteTitle }) => {
             <li>
               <Link to="/aboutus"> Über uns</Link>{' '}
             </li>
-            <li>
-              <Link to="/signin"> Anmelden</Link>{' '}
-            </li>
-            <li>
-              <Link to="/signup"> Registrieren</Link>{' '}
-            </li>
           </ul>
+          <div className="wrap-account">
+            {authenticated ? (
+              <div className="myaccount">
+                <span>My Account</span>
+                <span
+                  onClick={() => {
+                    console.log('signout');
+                    firebase
+                      .auth()
+                      .signOut()
+                      .then(() => {
+                        setAuthenticated(false);
+                        navigate('/');
+                      });
+                  }}
+                >
+                  <Link to="/">Logout</Link>
+                </span>
+              </div>
+            ) : (
+              <ul>
+                <li>
+                  <Link to="/signin"> Anmelden</Link>{' '}
+                </li>
+                <li>
+                  <Link to="/signup"> Registrieren</Link>{' '}
+                </li>
+              </ul>
+            )}
+          </div>
         </nav>
         <div className="menubar-modal">
           <input hidden type="checkbox" name="" id="menubar-toggle" />
