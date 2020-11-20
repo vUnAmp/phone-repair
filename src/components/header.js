@@ -99,6 +99,12 @@ const Header = ({ siteTitle }) => (
           <li>
             <Link to="/aboutus"> Über uns</Link>{' '}
           </li>
+          <li>
+            <Link to="/signin"> Anmelden</Link>{' '}
+          </li>
+          <li>
+            <Link to="/signup"> Registrieren</Link>{' '}
+          </li>
         </ul>
       </nav>
       <div className="menubar-modal">
@@ -134,6 +140,12 @@ const Header = ({ siteTitle }) => (
             </li>
             <li>
               <Link to="/aboutus"> Über uns</Link>{' '}
+            </li>
+            <li>
+              <Link to="/signin"> Anmelden</Link>{' '}
+            </li>
+            <li>
+              <Link to="/signup"> Registrieren</Link>{' '}
             </li>
           </ul>
         </div>
