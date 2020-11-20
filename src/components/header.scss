@@ -196,7 +196,7 @@ header {
 }
 
 .menubar-icon::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -8px;
   width: 22px;
@@ -205,7 +205,7 @@ header {
 }
 
 .menubar-icon::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 8px;
   width: 22px;
@@ -341,4 +341,7 @@ header {
   100% {
     opacity: 1;
   }
+}
+.justdoit {
+  color: red;
 }
